@@ -26,3 +26,15 @@ class Solution:
         
         print("lk ",largestKey)
         return largest
+
+"""
+Best Hashmap Result from leetcode user FACEPLANT
+
+h, result = {}, []
+for num in nums:
+	h[num] = h.get(num, 0) + 1
+for k in h.keys():
+	if h.get(k + 1):
+		result = max(result, h[k] + h[k + 1])
+return result
+"""
